@@ -10,8 +10,8 @@ export default function Navbar() {
   
 
   return (
-    <header className="font-body text-amber-500 fixed top-0 left-0 w-full z-50 bg-[rgba(255,253,245,0.8)] backdrop-blur-md shadow-sm">
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="font-body text-amber-500 fixed top-0 left-0 w-full z-50 bg-[rgb(184,163,43)] backdrop-blur-md shadow-sm">
+      <nav className="text-white max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     
         
         <a href="/" className="text-2xl flex font-bold font-title bg-gradient-to-r from-yellow-900 to-slate-900 bg-clip-text text-transparent">
@@ -24,7 +24,7 @@ export default function Navbar() {
             <li key={id}>
               <a
                 href={href}
-                className="flex items-center gap-2 text-gray-700 hover:text-yellow-700 transition"
+                className="flex items-center gap-2 text-white hover:text-yellow-700 transition"
               >
                 <Icon size={18} />
                 {label}
@@ -35,7 +35,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-800"
+          className="md:hidden text-white"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className="md:hidden h-screen bg-[rgba(255,253,245,0.95)] shadow-md backdrop-blur-md">
           <ul className="flex flex-col items-start  gap-4 py-6">
             {navLinks.map(({ id, label, href, Icon }) => (
-              <li key={id} className="py-2">
+              <li key={id} className="py-1">
                 <a
                   href={href}
                   className="flex px-4 items-center gap-2 text-gray-800 hover:text-yellow-700 transition"
