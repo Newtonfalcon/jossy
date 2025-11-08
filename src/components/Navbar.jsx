@@ -15,7 +15,7 @@ export default function Navbar() {
     
         
         <a href="/" className="text-2xl flex font-bold font-title bg-gradient-to-r from-yellow-900 to-slate-900 bg-clip-text text-transparent">
-          Jossy <span className=" text-yellow-700 font-light text-sm md:font-large -mt-1 -ml-2"><Cog size={24} className="animate-spin-slow" /></span>
+          Jossy -<span>tech</span>  <span className=" text-yellow-700 font-light text-sm md:font-large -mt-1 -ml-2">  <Cog size={24} className="animate-spin-slow" /></span>
         </a>
 
         {/* Desktop Links */}
